@@ -1,0 +1,447 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+
+/* Navigation */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    border-bottom: 12px solid black;
+    padding: 15px 25px;
+    justify-content: space-between;
+    background: white;
+    z-index: 10;
+    transition: all .5s ease;
+    overflow-y: hidden;
+}
+
+.links-bunch {
+    display: flex;
+    align-items: center;
+}
+
+.navlinks {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+    @media screen and (max-width: 900px) {
+        .navlinks {
+            display: none;
+        }
+    }
+
+#logo {
+    width: 210px;
+    margin-right: 75px;
+    transition: all .5s ease;
+}
+
+h3 {
+    color: #9e2745;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 22px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+    h3:hover {
+        color: #c6537e;
+        cursor: pointer;
+        text-decoration: underline;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 22px;
+    }
+
+.cart-bunch {
+    width: 180px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.search-icon {
+    height: 35px; 
+}
+
+    .search-icon:hover {
+        scale: 104%;
+        cursor: pointer;
+    }
+
+.cart-icon {
+    height: 25px;
+}
+
+    .cart-icon:hover {
+        scale: 104%;
+        cursor: pointer;
+    }
+
+.hamburger {
+    display: none;
+}
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+@media screen and (max-width: 900px) {
+    .cart-bunch {
+        width: 250px;
+    }
+
+    .hamburger {
+        display: block;
+        height: 20px;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .hamburger-line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        display: block;
+    }
+}
+
+#mobile-menu {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    z-index: 10;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 0px 10px black;
+    transition: all .5s ease;
+}
+
+
+.mobile-navlinks {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.mobile-navlinks h3 {
+    font-size: 24px;
+    margin: 4px;
+}
+
+
+/* TITLE SECTION */
+
+.hero-container {
+    position: relative;
+}
+
+.title-container {
+    width: 90vw;
+    height: 100px;
+    margin: 200px auto 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line1 {
+   width: 15vw;
+   height: 3px;
+   display: block;
+   background: linear-gradient(to left,black, rgb(255, 255, 255)); 
+}
+
+.line2 {
+    width: 15vw;
+    height: 3px;
+    display: block;
+    background: linear-gradient(to right,black, rgb(255, 255, 255)); 
+ }
+
+.butcher-text-box {
+    width: 508px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title1 {
+    font-weight: 500;
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    z-index: 5;
+    font-size: 9vw;
+    color: #9e2745;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.439);
+}
+
+.title2 {
+    width: 60vw;
+    position: absolute;
+}
+
+.burger-hero {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-25px);
+    z-index: 0;
+}
+
+.image {
+    width: 35vw;
+}
+
+.subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #9e2745;
+    font-weight: 700;
+    width: 100vw;
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    margin: 20px auto;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    background-color: #9e2745;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(169, 169, 169);
+}
+
+button:hover {
+    background-color:#c6537e;
+    cursor: pointer;
+}
+
+.button-center {
+    transform: translateY(-50px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    align-items: center;
+}
+
+/* Scrolling Text */
+
+.scrolling-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: -10;
+    top: 350px;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.scroll {
+    width: max-content;
+    animation: scrollText 50s infinite ease-in-out;
+}
+
+.scroll2 {
+    width: max-content;
+    animation: scrollText2 50s infinite ease-in-out;
+}
+
+  
+/* .scroll:hover {
+    animation-play-state: paused;
+  }
+
+.scroll2:hover {
+    animation-play-state: paused;
+} */
+
+  @keyframes scrollText {
+    0%   { transform: translateX(0%); }
+    50% { transform: translateX(-15%); }
+    100% { transform: translateX(0%); }
+  }
+
+  @keyframes scrollText2 {
+    0%   { transform: translateX(0%); }
+    50% { transform: translateX(15%); }
+    100% { transform: translateX(0%); }
+  }
+
+/* Staff Picks */
+
+.staff-picks {
+    position: relative;
+    height: 800px;
+    margin-top: 100px;
+    background: linear-gradient(white, #9e274540, white);
+    overflow: visible;
+}
+
+
+/* Floating Tiles */
+
+.info-container {
+    position: absolute;
+    display: flex;
+    width: 275px;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-container:hover {
+    scale: 110%;
+    transition: all .1s linear;
+}
+
+.tile-sub-flex {
+    width: 175px;
+}
+
+.tile-sub-flex h5 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.tile-sub-flex p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.avatar {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+#edward {
+    position: absolute;
+    top: 20px;
+    left: 30vw;
+    animation: circle 6s infinite linear;
+}
+
+#edward2 {
+    position: absolute;
+    top: 500px;
+    left: 20vw;
+    animation: circle 8s infinite linear;
+    animation-direction: reverse;
+}
+
+#connor {
+    position: absolute;
+    top: 200px;
+    left: 10vw;
+    animation: circle 12s infinite linear;
+}
+
+#connor2 {
+    position: absolute;
+    top: 100px;
+    left: 65vw;
+    animation: circle 9s infinite linear;
+}
+
+#vicky {
+    position: absolute;
+    top: 500px;
+    left: 60vw;
+    animation: circle 7s infinite linear;
+}
+
+#kaitlin {
+    position: absolute;
+    top: 250px;
+    left: 50vw;
+    animation: circle 10s infinite linear;
+    animation-direction: reverse;
+}
+
+#edward:hover,
+#edward2:hover,
+#connor:hover,
+#connor2:hover,
+#vicky:hover,
+#kaitlin:hover {
+    animation-play-state: paused;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.507);
+    z-index: calc(+1)
+}
+
+@keyframes circle {
+    from {
+      transform: rotate(0deg) translateX(20px) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translateX(20px) rotate(-360deg);
+    }
+  }
+
+
+  /* Closing Banner */
+  .closing-banner {
+    height: 500px;
+    width: 100vw;
+    background-image: url('Rastellis Assets/raw burger.jpg');
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.filter {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.closing-banner h2 {
+    margin-bottom: 25px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3vw;
+}
+

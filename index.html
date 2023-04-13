@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Rastellis</title>
+</head>
+
+
+<body>
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="links-bunch">
+            <image id='logo' src="Rastellis Assets/logo.jpg" />
+            <div class="navlinks">
+                <h3>SHOP</h3>
+                <h3>ABOUT US</h3>
+                <h3>GIFTING</h3>
+                <h3>ASK THE BUTCHER</h3>
+                <h3>REWARDS</h3>
+            </div>
+        </div>
+
+        <div class="cart-bunch">
+            <image class='search-icon' src="Rastellis Assets/search.jpg"/>
+            <h3>MY RASTELLI's</h3>
+            
+            <a>
+                <image class='cart-icon' src="Rastellis Assets/cart.jpg" />
+            </a>
+            
+
+            <div class="hamburger" onclick=menuToggle()>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </div>
+        </div>
+
+    </nav>
+
+    <div id="mobile-menu">
+        <div class="mobile-navlinks">
+            <h3 onclick=mobileLinkClick()>SHOP</h3>
+            <h3 onclick=mobileLinkClick()>ABOUT US</h3>
+            <h3 onclick=mobileLinkClick()>GIFTING</h3>
+            <h3 onclick=mobileLinkClick()>ASK THE BUTCHER</h3>
+            <h3 onclick=mobileLinkClick()>REWARDS</h3>
+        </div>
+    </div>
+
+    <!-- TITLE -->
+    <div class="hero-container">
+        <div class="title-container">
+            <span class="line1"></span>
+            <div class="butcher-text-box">
+                <h1 class="title1">BUTCHER BURGERS</h1>
+                <image class='title2' src="Rastellis Assets/Butcher Burgers.svg"/>
+            </div>
+            <span class="line2"></span>
+        </div>
+        
+        <span class="burger-hero">
+            <image class='image' src="Rastellis Assets/burger-hero.png" />
+        </span>
+    
+        <div class="scrolling-text-container">
+            <h2 class="scroll">JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS</h2>
+            <h2 class="scroll2">DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH</h2>
+            <h2 class="scroll">JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS JUICY FRESH DELICIOUS</h2>
+        </div>
+        
+        <p class="subtitle">A perfectly grilled burger starts at Rastelli's...</p>
+    
+        <span class="button-center">
+            <button>SHOP BURGERS</button>
+        </span>
+    </div>
+
+    <div class="staff-picks">
+        <div id='kaitlin' class="info-container">
+            <image 
+                class="avatar" 
+                style="background-image: url('Rastellis Assets/Kaitlin.jpg')"
+            />
+            <div class="tile-sub-flex">
+                <h5>KAITLIN</h5>
+                <p> <strong>Bacon Cheddar:</strong> Bacon Cheddar, Onion Strings, and BBQ Sauce.</p>
+            </div>
+        </div>
+
+        <div id='vicky' class="info-container">
+            <image 
+                class="avatar" 
+                style="background-image: url('Rastellis Assets/vicky.jpg')"
+            />
+            <div class="tile-sub-flex">
+                <h5>VICKY</h5>
+                <p> <strong>All-American</strong> Fried Pickles, American Cheese, Relish & Chips.</p>
+            </div>
+        </div>
+
+        <div id='connor' class="info-container">
+            <image 
+                class="avatar" 
+                style="background-image: url('Rastellis Assets/connor.webp')"
+            />
+            <div class="tile-sub-flex">
+                <h5>CONNOR</h5>
+                <p> <strong>Cajun:</strong> Jalapeno Cheese, Chili Mayo & Pico de Gallo Sauce.</p>
+            </div>
+        </div>
+
+        <div id='connor2' class="info-container">
+            <image 
+                class="avatar" 
+                style="background-image: url('Rastellis Assets/connor.webp')"
+            />
+            <div class="tile-sub-flex">
+                <h5>CONNOR</h5>
+                <p> <strong>Cajun:</strong> Jalapeno Cheese, Chili Mayo & Pico de Gallo Sauce.</p>
+            </div>
+        </div>
+
+        <div id='edward' class="info-container">
+            <image 
+                class="avatar" 
+                style="background-image: url('Rastellis Assets/edward.webp')"
+            />
+            <div class="tile-sub-flex">
+                <h5>EDWARD</h5>
+                <p> <strong>Classic:</strong> Ketchup, Mustard, and Pickles.</p>
+            </div>
+        </div>
+
+        <div id='edward2' class="info-container">
+            <image 
+                class="avatar" 
+                style="background-image: url('Rastellis Assets/edward.webp')"
+            />
+            <div class="tile-sub-flex">
+                <h5>EDWARD</h5>
+                <p> <strong>Classic:</strong> Ketchup, Mustard, and Pickles.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="closing-banner">
+        <div class="filter">
+            <h2>What are you waiting for?  Fire up that grill!</h2>
+            <button>SHOP BURGERS</button>
+        </div>
+    </div>
+    
+
+</body>
+
+    <script src="script.js"></script>
+</html>
